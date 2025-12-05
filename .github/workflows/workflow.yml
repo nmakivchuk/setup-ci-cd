@@ -25,5 +25,7 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    - run: echo "Job was triggered by ${{ github.event_name }}"
+    - run: echo "App Name is ${{ env.APP_NAME }}
     - run: echo "Name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}"
+    - run: echo "Job was triggered by ${{ github.event_name }}"
+    
