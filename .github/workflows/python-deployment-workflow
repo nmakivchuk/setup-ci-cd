@@ -1,12 +1,11 @@
 name: python-deployment
-
 run-name: ${{ github.actor }} - ${{ github.ref_name}}
 
 on:
   push:
-    branches: ["main"]
+    branches: [ "main" ]
   pull_request:
-    branches: ["main"]
+    branches: [ "main" ]
 
 jobs:
   python-ci:
